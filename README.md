@@ -251,7 +251,7 @@ Strategies used to handle overfitting and underfitting included:
 
 ### Predictions:
 
-![alt text](outputs.png)
+![alt text](Outputs.png)
 
 ## Production Advice
 
