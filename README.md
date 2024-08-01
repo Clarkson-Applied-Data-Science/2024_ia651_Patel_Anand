@@ -245,9 +245,7 @@ The model fitting process involved training a `RandomForestClassifier` on the pr
 ## Handling Overfitting/Underfitting
 Strategies used to handle overfitting and underfitting included:
 
-- **Regularization**: Applying techniques like pruning trees in RandomForest to prevent overfitting.
 - **Cross-validation**: Ensuring the model generalizes well to new data by using cross-validation.
-- **Data Augmentation**: Increasing the size and variability of the training data to improve model robustness.
 
 ## Production Advice
 For deploying this model in a production environment, consider the following:
@@ -260,7 +258,6 @@ For deploying this model in a production environment, consider the following:
 Suggestions for further enhancing the model include:
 
 - **More Data**: Collecting additional data to improve model generalization and robustness.
-- **Additional Features**: Incorporating external economic indicators and other relevant features.
 - **Advanced Feature Engineering**: Applying more sophisticated feature engineering techniques.
 - **Model Training Techniques**: Experimenting with different models and ensemble methods to improve performance.
 
