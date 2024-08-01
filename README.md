@@ -245,6 +245,7 @@ Strategies used to handle overfitting and underfitting included:
 
 - **Cross-validation**: Ensuring the model generalizes well to new data by using cross-validation.
 
+
 | Model                   | Best Parameters                                  | Best Score | Validation Accuracy | Cross-Validation Scores                   | Mean CV Accuracy |
 |-------------------------|--------------------------------------------------|------------|---------------------|-------------------------------------------|------------------|
 | RandomForestClassifier  | {'bootstrap': True, 'max_depth': 30, 'n_estimators': 200} | 0.7785072695728552 | 0.7920233463035019 | [0.79163424, 0.79081533, 0.79081533, 0.78575598, 0.78925861] | 0.7896559005938415 |
