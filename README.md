@@ -263,7 +263,7 @@ Strategies used to handle overfitting and underfitting included:
 2. Install the required dependencies.
 3. Load the train dataset.
 4. Run the cleaning and preprocessing steps.
-5. Load the test dataset
+5. Load the test dataset.
 6. Run the cleaning and preprocessing steps.
 7. Train the models.
 8. Evaluate the models.
