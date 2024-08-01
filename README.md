@@ -247,7 +247,8 @@ Strategies used to handle overfitting and underfitting included:
 
 - Number of splits (n_splits): 5 
 - Shuffling (shuffle): True 
-- Random State (random_state): 42 
+- Random State (random_state): 42
+
 
 | Model                   | Best Parameters                                  | Best Score | Validation Accuracy | Cross-Validation Scores                   | Mean CV Accuracy |
 |-------------------------|--------------------------------------------------|------------|---------------------|-------------------------------------------|------------------|
