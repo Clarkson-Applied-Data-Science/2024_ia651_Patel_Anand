@@ -184,6 +184,10 @@ Several machine learning models were employed in this project and the performanc
 weighted avg       0.79      0.79      0.79      5140
 ```
 
+| Model                   | Best Parameters                                  | Best Score | Validation Accuracy |
+|-------------------------|--------------------------------------------------|------------|---------------------|
+| RandomForestClassifier  | {'bootstrap': True, 'max_depth': 30, 'n_estimators': 200} | 0.7785072695728552 | 0.7920233463035019 |
+
 ### DecisionTreeClassifier
 The DecisionTreeClassifier was one of the models used in this project. The performance metrics for this model are as follows:
 
@@ -250,9 +254,9 @@ Strategies used to handle overfitting and underfitting included:
 - Random State (random_state): 42
 
 
-| Model                   | Best Parameters                                  | Best Score | Validation Accuracy | Cross-Validation Scores                   | Mean CV Accuracy |
-|-------------------------|--------------------------------------------------|------------|---------------------|-------------------------------------------|------------------|
-| RandomForestClassifier  | {'bootstrap': True, 'max_depth': 30, 'n_estimators': 200} | 0.7785072695728552 | 0.7920233463035019 | [0.79163424, 0.79081533, 0.79081533, 0.78575598, 0.78925861] | 0.7896559005938415 |
+| Model                   | Cross-Validation Scores                   | Mean CV Accuracy |
+|-------------------------|-------------------------------------------|------------------|
+| RandomForestClassifier  | [0.79163424, 0.79081533, 0.79081533, 0.78575598, 0.78925861] | 0.7896559005938415 |
 
 ## Confusion Matrix
 
