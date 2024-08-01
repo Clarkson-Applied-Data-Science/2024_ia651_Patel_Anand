@@ -5,9 +5,9 @@
 This project utilizes several datasets involving financial and personal data points for individuals. These datasets include information such as ID, Customer_ID, Age, SSN, Occupation, Annual Income, Credit Score, and more. The data originates from a simulated financial dataset designed to resemble real-world scenarios in banking and credit scoring. The datasets are collected to explore patterns and model credit behavior, making them useful for credit risk assessment and financial product tailoring.
 
 ## Table of Contents
+- [Prediction Objective](#prediction-objective)
 - [Fields and Data Collection](#fields-and-data-collection)
 - [Data Overview](#data-overview)
-- [Prediction Objective](#prediction-objective)
 - [Process Overview](#process-overview)
 - [Models Used and Validation Metrics(Initial Modeling)](#models-used-and-validation-metrics)
 - [Model Fitting](#model-fitting)
@@ -19,9 +19,6 @@ This project utilizes several datasets involving financial and personal data poi
 ## Prediction Objective
 
 The primary aim is to predict the 'Credit Score' of individuals based on their financial and personal data. This prediction can help financial institutions in decision-making processes regarding loan approvals, credit limits, and interest rates, ultimately aiding in risk management and personalized financial planning.
-
-### Dataset Link
-[Link To Dataset](https://www.kaggle.com/datasets/budhadityadutta/credit-score-classification/data)
 
 ## Fields and Data Collection
 
@@ -73,7 +70,8 @@ Here's an updated version of the table, where I've added a column specifying the
 | Monthly_Balance           | The monthly balance left in the account of the person                   | Numerical    |
 | Credit_Score              | The credit score of the person                                          | Categorical  |
 
-This classification helps in understanding how each column might be used in analysis, and whether transformations or specific handling might be needed (like encoding categorical variables or normalizing numerical variables). If you need any more modifications or specific analyses, feel free to ask!
+### Dataset Link
+[Link To Dataset](https://www.kaggle.com/datasets/budhadityadutta/credit-score-classification/data)
 
 ## Process Overview
 
