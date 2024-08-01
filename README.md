@@ -8,7 +8,7 @@ This project utilizes several datasets involving financial and personal data poi
 - [Prediction Objective](#prediction-objective)
 - [Data Overview](#data-overview)
 - [Process Overview](#process-overview)
-- [Models Used and Validation Metrics (Initial Modeling)](#models-used-and-validation-metrics-(initial-modeling))
+- [Models Used and Validation Metrics (Initial Modeling)](#models-used-and-validation-metrics)
 - [Hyperparameter Tuning](#hyperparameter-tuning)
 - [Confusion Matrix](#confusion-matrix)
 - [Outputs](#outputs)
