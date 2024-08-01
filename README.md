@@ -158,9 +158,9 @@ Created new features and transformed categorical variables into a numerical form
 
 ## Models Used and Validation Metrics
 Several machine learning models were employed in this project. 
-1.RandomForest Classifier
-2.DecisionTree Classifier
-3.XGBoost Classifier
+- RandomForest Classifier
+- DecisionTree Classifier
+- XGBoost Classifier
 Model performance was evaluated using metrics such as accuracy, precision, recall, and F1 score.
 
 **RandomForestClassifier**
