@@ -1,17 +1,17 @@
 # Credit Score Prediction Using Machine Learning
 
 ## Table of Contents
-- [Dataset Description](#Dataset Description)
-- [Fields and Data Collection](#FieldsandDataCollection)
-- [Data Overview](#DataOverview)
-- [Prediction Objective](#PredictionObjective)
-- [Process Overview](#ProcessOverview)
-- [Models Used](#ModelsUsed)
-- [Model Fitting](#ModelFitting)
-- [Handling Overfitting/Underfitting](#HandlingOverfitting/Underfitting)
-- [Production Advice](#ProductionAdvice)
-- [Future Work and Improvements](#FutureWorkandImprovements)
-- [Conclusion](#Conclusion)
+- [Dataset Description](#dataset-description)
+- [Fields and Data Collection](#fields-and-data-collection)
+- [Data Overview](#data-overview)
+- [Prediction Objective](#prediction-objective)
+- [Process Overview](#process-overview)
+- [Models Used and Validation Metrics](#models-used-and-validation-metrics)
+- [Model Fitting](#model-fitting)
+- [Handling Overfitting/Underfitting](#handling-overfittingunderfitting)
+- [Production Advice](#production-advice)
+- [Future Work and Improvements](#future-work-and-improvements)
+- [Conclusion](#conclusion)
 
 ## Dataset Description
 
