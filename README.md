@@ -1,21 +1,24 @@
 # Credit Score Prediction Using Machine Learning
 
+## Introduction
+
+This project utilizes several datasets involving financial and personal data points for individuals. These datasets include information such as ID, Customer_ID, Age, SSN, Occupation, Annual Income, Credit Score, and more. The data originates from a simulated financial dataset designed to resemble real-world scenarios in banking and credit scoring. The datasets are collected to explore patterns and model credit behavior, making them useful for credit risk assessment and financial product tailoring.
+
 ## Table of Contents
-- [Dataset Description](#dataset-description)
 - [Fields and Data Collection](#fields-and-data-collection)
 - [Data Overview](#data-overview)
 - [Prediction Objective](#prediction-objective)
 - [Process Overview](#process-overview)
-- [Models Used and Validation Metrics](#models-used-and-validation-metrics)
+- [Models Used and Validation Metrics(Initial Modeling)](#models-used-and-validation-metrics)
 - [Model Fitting](#model-fitting)
 - [Handling Overfitting/Underfitting](#handling-overfittingunderfitting)
 - [Production Advice](#production-advice)
 - [Future Work and Improvements](#future-work-and-improvements)
 - [Conclusion](#conclusion)
 
-## Dataset Description
+## Prediction Objective
 
-This project utilizes several datasets involving financial and personal data points for individuals. These datasets include information such as ID, Customer_ID, Age, SSN, Occupation, Annual Income, Credit Score, and more. The data originates from a simulated financial dataset designed to resemble real-world scenarios in banking and credit scoring. The datasets are collected to explore patterns and model credit behavior, making them useful for credit risk assessment and financial product tailoring.
+The primary aim is to predict the 'Credit Score' of individuals based on their financial and personal data. This prediction can help financial institutions in decision-making processes regarding loan approvals, credit limits, and interest rates, ultimately aiding in risk management and personalized financial planning.
 
 ### Dataset Link
 [Link To Dataset](https://www.kaggle.com/datasets/budhadityadutta/credit-score-classification/data)
@@ -28,8 +31,6 @@ The datasets comprise various fields, each contributing to a comprehensive profi
 - **Financial Metrics**: Covers financial status and behavior (e.g., Annual Income, Number of Bank Accounts, Credit Score).
 - **Credit Information**: Details on credit history and current credit status (e.g., Credit Mix, Outstanding Debt).
 
-These fields were compiled to mirror typical data used by financial institutions for assessing creditworthiness and financial stability.
-
 ## Data Overview
 
 | Dataset                      | Rows   | Columns | Description                                                 |
@@ -39,40 +40,40 @@ These fields were compiled to mirror typical data used by financial institutions
 
 ### Columns Description for `train.csv`
 
-| Column Name               | Description                                                            |
-|---------------------------|------------------------------------------------------------------------|
-| ID                        | Unique ID of the record                                                |
-| Customer_ID               | Unique ID of the customer                                              |
-| Month                     | Month of the year                                                      |
-| Name                      | The name of the person                                                 |
-| Age                       | The age of the person                                                  |
-| SSN                       | Social Security Number of the person (removed during data cleaning)    |
-| Occupation                | The occupation of the person                                           |
-| Annual_Income             | The Annual Income of the person                                        |
-| Monthly_Inhand_Salary     | Monthly in-hand salary of the person                                   |
-| Num_Bank_Accounts         | The number of bank accounts of the person                              |
-| Num_Credit_Card           | Number of credit cards the person has                                  |
-| Interest_Rate             | The interest rate on the credit card of the person                     |
-| Num_of_Loan               | The number of loans taken by the person from the bank                  |
-| Type_of_Loan              | The types of loans taken by the person from the bank                   |
-| Delay_from_due_date       | The average number of days delayed by the person from the date of payment |
-| Num_of_Delayed_Payment    | Number of payments delayed by the person                               |
-| Changed_Credit_Limit      | The percentage change in the credit card limit of the person           |
-| Num_Credit_Inquiries      | The number of credit card inquiries by the person                      |
-| Credit_Mix                | Classification of Credit Mix of the customer                           |
-| Outstanding_Debt          | The outstanding balance of the person                                  |
-| Credit_Utilization_Ratio  | The credit utilization ratio of the credit card of the customer        |
-| Credit_History_Age        | The age of the credit history of the person                            |
-| Payment_of_Min_Amount     | Yes if the person paid the minimum amount to be paid only otherwise no |
-| Total_EMI_per_month       | The total EMI per month of the person                                  |
-| Amount_invested_monthly   | The monthly amount invested by the person                              |
-| Payment_Behaviour         | The payment behaviour of the person                                    |
-| Monthly_Balance           | The monthly balance left in the account of the person                  |
-| Credit_Score              | The credit score of the person                                         |
+Here's an updated version of the table, where I've added a column specifying the type of data for each column. The types are broadly categorized as 'Categorical', 'Numerical', or 'Identifier', depending on the nature of the data:
 
-## Prediction Objective
+| Column Name               | Description                                                             | Data Type    |
+|---------------------------|-------------------------------------------------------------------------|--------------|
+| ID                        | Unique ID of the record                                                 | Identifier   |
+| Customer_ID               | Unique ID of the customer                                               | Identifier   |
+| Month                     | Month of the year                                                       | Categorical  |
+| Name                      | The name of the person                                                  | Categorical  |
+| Age                       | The age of the person                                                   | Numerical    |
+| SSN                       | Social Security Number of the person (removed during data cleaning)     | Identifier   |
+| Occupation                | The occupation of the person                                            | Categorical  |
+| Annual_Income             | The Annual Income of the person                                         | Numerical    |
+| Monthly_Inhand_Salary     | Monthly in-hand salary of the person                                    | Numerical    |
+| Num_Bank_Accounts         | The number of bank accounts of the person                               | Numerical    |
+| Num_Credit_Card           | Number of credit cards the person has                                   | Numerical    |
+| Interest_Rate             | The interest rate on the credit card of the person                      | Numerical    |
+| Num_of_Loan               | The number of loans taken by the person from the bank                   | Numerical    |
+| Type_of_Loan              | The types of loans taken by the person from the bank                    | Categorical  |
+| Delay_from_due_date       | The average number of days delayed by the person from the date of payment | Numerical    |
+| Num_of_Delayed_Payment    | Number of payments delayed by the person                                | Numerical    |
+| Changed_Credit_Limit      | The percentage change in the credit card limit of the person            | Numerical    |
+| Num_Credit_Inquiries      | The number of credit card inquiries by the person                       | Numerical    |
+| Credit_Mix                | Classification of Credit Mix of the customer                            | Categorical  |
+| Outstanding_Debt          | The outstanding balance of the person                                   | Numerical    |
+| Credit_Utilization_Ratio  | The credit utilization ratio of the credit card of the customer         | Numerical    |
+| Credit_History_Age        | The age of the credit history of the person                             | Numerical    |
+| Payment_of_Min_Amount     | Yes if the person paid the minimum amount to be paid only otherwise no  | Categorical  |
+| Total_EMI_per_month       | The total EMI per month of the person                                   | Numerical    |
+| Amount_invested_monthly   | The monthly amount invested by the person                               | Numerical    |
+| Payment_Behaviour         | The payment behaviour of the person                                     | Categorical  |
+| Monthly_Balance           | The monthly balance left in the account of the person                   | Numerical    |
+| Credit_Score              | The credit score of the person                                          | Categorical  |
 
-The primary aim is to predict the 'Credit Score' of individuals based on their financial and personal data. This prediction can help financial institutions in decision-making processes regarding loan approvals, credit limits, and interest rates, ultimately aiding in risk management and personalized financial planning.
+This classification helps in understanding how each column might be used in analysis, and whether transformations or specific handling might be needed (like encoding categorical variables or normalizing numerical variables). If you need any more modifications or specific analyses, feel free to ask!
 
 ## Process Overview
 
@@ -89,14 +90,6 @@ Handled missing values and corrected inconsistencies in the data. This included:
 - **Dropped Null Values**: Dropped all the null values from the dataset
 - **Corrected Columns**: Columns like `Age` were corrected by converting the values in single unit of month.
 - **Removed Outliers**: Removed Outliers by detecting them using IQR method.
-
-### Feature Engineering
-
-Created new features and transformed categorical variables into a numerical format suitable for machine learning models. This included:
-
-- **Label Encoding**: The `Payment_of_Min_Amount`, `Credit_Mix` columns were label encoded to convert categorical data into numerical format.
-- **One-Hot Encoding**: The `Type_of_Loan`, `Payment_Behaviour`, `Occupation` columns was one-hot encoded manually.
-- **Advanced Techniques**: Created a new features `Debt_to_Income_Ratio_Per_Month`, `History_Mix_Interaction` and `Accounts_Interaction`.
 
 ### Exploratory Data Analysis (EDA)
 
@@ -155,7 +148,15 @@ Created new features and transformed categorical variables into a numerical form
   
 ![alt text](Corr-Matrix.png)
 
-## Models Used and Validation Metrics
+### Feature Engineering
+
+Created new features and transformed categorical variables into a numerical format suitable for machine learning models. This included:
+
+- **Label Encoding**: The `Payment_of_Min_Amount`, `Credit_Mix` columns were label encoded to convert categorical data into numerical format.
+- **One-Hot Encoding**: The `Type_of_Loan`, `Payment_Behaviour`, `Occupation` columns was one-hot encoded manually.
+- **Advanced Techniques**: Created a new features `Debt_to_Income_Ratio_Per_Month`, `History_Mix_Interaction` and `Accounts_Interaction`.
+
+## Models Used and Validation Metrics (Initial Modeling)
 Several machine learning models were employed in this project and the performance was evaluated using metrics such as accuracy, precision, recall, and F1 score:
 
 - RandomForest Classifier
