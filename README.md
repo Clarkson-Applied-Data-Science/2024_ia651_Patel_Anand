@@ -206,8 +206,8 @@ The DecisionTreeClassifier was one of the models used in this project. The perfo
 weighted avg       0.73      0.73      0.73      5140
 ```
 
-| Model                   | Best Parameters                                  | Best Score | Validation Accuracy                 
-|-------------------------|--------------------------------------------------|------------|---------------------|-------------------------------------------|------------------|
+| Model                   | Best Parameters                                  | Best Score | Validation Accuracy |                
+|-------------------------|--------------------------------------------------|------------|---------------------|
 | DecisionTreeClassifier  | {'criterion': 'entropy', 'max_depth': 10}       | 0.7256275040770372 | 0.7328793774319066 |                                   
 
 ### XGBoostClassifier
@@ -232,8 +232,8 @@ The XGBoostClassifier was another model used in this project. The performance me
 weighted avg       0.78      0.78      0.78      5140
 ```
 
-| Model                   | Best Parameters                                  | Best Score | Validation Accuracy                 
-|-------------------------|--------------------------------------------------|------------|---------------------|-------------------------------------------|------------------|
+| Model                   | Best Parameters                                  | Best Score | Validation Accuracy |                 
+|-------------------------|--------------------------------------------------|------------|---------------------|
 | XGBoostClassifier       | {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 200} | 0.7657130508732858 | 0.775875486381323 |                                 
 
 ### Hyperparameter Tuning
