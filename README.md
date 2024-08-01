@@ -6,12 +6,12 @@ This project utilizes several datasets involving financial and personal data poi
 
 ## Table of Contents
 - [Prediction Objective](#prediction-objective)
-- [Fields and Data Collection](#fields-and-data-collection)
 - [Data Overview](#data-overview)
 - [Process Overview](#process-overview)
-- [Models Used and Validation Metrics(Initial Modeling)](#models-used-and-validation-metrics)
+- [Models Used and Validation Metrics (Initial Modeling)](#models-used-and-validation-metrics)
 - [Hyperparameter Tuning](#hyperparameter-tuning)
-- [Handling Overfitting/Underfitting](#handling-overfittingunderfitting)
+- [Confusion Matrix](#confusion-matrix)
+- [Outputs](#outputs)
 - [Production Advice](#production-advice)
 - [Future Work and Improvements](#future-work-and-improvements)
 - [Conclusion](#conclusion)
