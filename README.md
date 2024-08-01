@@ -20,20 +20,20 @@ This project utilizes several datasets involving financial and personal data poi
 
 The primary aim is to predict the 'Credit Score' of individuals based on their financial and personal data. This prediction can help financial institutions in decision-making processes regarding loan approvals, credit limits, and interest rates, ultimately aiding in risk management and personalized financial planning.
 
-## Fields and Data Collection
-
-The datasets comprise various fields, each contributing to a comprehensive profile of each customer:
-
-- **Personal Details**: Includes identifiers and demographic information (e.g., ID, Name, Age).
-- **Financial Metrics**: Covers financial status and behavior (e.g., Annual Income, Number of Bank Accounts, Credit Score).
-- **Credit Information**: Details on credit history and current credit status (e.g., Credit Mix, Outstanding Debt).
-
 ## Data Overview
 
 | Dataset                      | Rows   | Columns | Description                                                 |
 |------------------------------|--------|---------|-------------------------------------------------------------|
 | `train.csv`                  | 100,000| 28      | Raw training data                                           |
 | `test.csv`                   |  50,000| 27      | Raw test data                                               |
+
+### Fields and Data Collection
+
+The datasets comprise various fields, each contributing to a comprehensive profile of each customer:
+
+- **Personal Details**: Includes identifiers and demographic information (e.g., ID, Name, Age).
+- **Financial Metrics**: Covers financial status and behavior (e.g., Annual Income, Number of Bank Accounts, Credit Score).
+- **Credit Information**: Details on credit history and current credit status (e.g., Credit Mix, Outstanding Debt).
 
 ### Columns Description for `train.csv`
 
