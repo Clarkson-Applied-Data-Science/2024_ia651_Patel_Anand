@@ -22,6 +22,9 @@ The primary aim is to predict the 'Credit Score' of individuals based on their f
 
 ## Data Overview
 
+### Dataset Link
+[Link To Dataset](https://www.kaggle.com/datasets/budhadityadutta/credit-score-classification/data)
+
 | Dataset                      | Rows   | Columns | Description                                                 |
 |------------------------------|--------|---------|-------------------------------------------------------------|
 | `train.csv`                  | 100,000| 28      | Raw training data                                           |
@@ -69,9 +72,6 @@ Here's an updated version of the table, where I've added a column specifying the
 | Payment_Behaviour         | The payment behaviour of the person                                     | Categorical  |
 | Monthly_Balance           | The monthly balance left in the account of the person                   | Numerical    |
 | Credit_Score              | The credit score of the person                                          | Categorical  |
-
-### Dataset Link
-[Link To Dataset](https://www.kaggle.com/datasets/budhadityadutta/credit-score-classification/data)
 
 ## Process Overview
 
