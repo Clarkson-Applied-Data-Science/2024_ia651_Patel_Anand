@@ -247,12 +247,23 @@ Strategies used to handle overfitting and underfitting included:
 
 - **Cross-validation**: Ensuring the model generalizes well to new data by using cross-validation.
 
-## Production Advice
-For deploying this model in a production environment, consider the following:
+## Outputs
 
-- **Monitoring**: Continuously monitor model performance over time to detect any degradation.
-- **Updating**: Regularly update the model with new data to maintain its accuracy and relevance.
-- **Data Privacy and Security**: Ensure that customer data is handled securely and in compliance with data privacy regulations.
+### Predictions:
+
+![alt text](outputs.png)
+
+## Production Advice
+
+###Steps:
+1. Clone the repository.
+2. Install the required dependencies.
+3. Load the train dataset.
+4. Run the cleaning and preprocessing steps.
+5. Load the test dataset
+6. Run the cleaning and preprocessing steps.
+7. Train the models.
+8. Evaluate the models.
 
 ## Future Work and Improvements
 Suggestions for further enhancing the model include:
