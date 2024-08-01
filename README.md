@@ -96,7 +96,7 @@ Created new features and transformed categorical variables into a numerical form
 
 - **Label Encoding**: The `Payment_of_Min_Amount`, `Credit_Mix` columns were label encoded to convert categorical data into numerical format.
 - **One-Hot Encoding**: The `Type_of_Loan`, `Payment_Behaviour`, `Occupation` columns was one-hot encoded manually.
-- **Advanced Techniques**: Created a new feature `Debt_to_Income_Ratio` by dividing `Outstanding_Debt` by `Annual_Income`.
+- **Advanced Techniques**: Created a new features `Debt_to_Income_Ratio_Per_Month`, `History_Mix_Interaction` and `Accounts_Interaction`.
 
 ### Exploratory Data Analysis (EDA)
 
@@ -120,8 +120,6 @@ Created new features and transformed categorical variables into a numerical form
   **Distribution of Outstanding Debt**
   
 ![alt text](OD.png)
-
-- **Correlation and Feature Importance**: The correlation matrix helped identify multicollinearity and significant predictors. For instance, `Outstanding_Debt` and `Monthly_Balance` showed strong correlations with the target variable `Credit_Score`.
 
 - **Count Plot of Month vs Credit Score**: Shows the relationship between the month and the credit score, highlighting any seasonal trends in credit scores.
 
@@ -153,7 +151,8 @@ Created new features and transformed categorical variables into a numerical form
 
 ![alt text](PMApie.png)
 
-  **Correlation Matrix**
+  **Correlation Matrix**: The correlation matrix helped identify multicollinearity and significant predictors. For instance, `Outstanding_Debt`, `Monthly_Balance`, `Debt_to_Income_Ratio_Per_Month`, `History_Mix_Interaction` and `Accounts_Interaction` showed strong correlations with the target variable `Credit_Score`.
+  
 ![alt text](Corr-Matrix.png)
 
 ## Models Used and Validation Metrics
