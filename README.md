@@ -32,11 +32,7 @@ These fields were compiled to mirror typical data used by financial institutions
 | Dataset                      | Rows   | Columns | Description                                                 |
 |------------------------------|--------|---------|-------------------------------------------------------------|
 | `train.csv`                  | 100,000| 28      | Raw training data                                           |
-| `Train_Cleaned_Data.csv`     |  25,696| 36      | Cleaned and processed training data                         |
-| `Train_Preprocessed.csv`     |  25,696| 53      | Preprocessed training data with feature engineering and encoding |
 | `test.csv`                   |  50,000| 27      | Raw test data                                               |
-| `Test_Preprocessed.csv`      |  21,313| 51      | Preprocessed test data ready for predictions                |
-| `test_with_Predicted_Credit_Scores.csv` | 21,313| 52 | Test data with the predicted credit scores included         |
 
 ### Columns Description for `train.csv`
 
