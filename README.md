@@ -1,7 +1,7 @@
 # Credit Score Prediction Using Machine Learning
 
 ## Table of Contents
-- [Dataset Description](#DatasetDescription)
+- [Dataset Description](#Dataset Description)
 - [Fields and Data Collection](#FieldsandDataCollection)
 - [Data Overview](#DataOverview)
 - [Prediction Objective](#PredictionObjective)
