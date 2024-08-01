@@ -165,6 +165,13 @@ Several machine learning models were employed in this project and the performanc
 **Model Optimization**: `GridSearchCV` was used to find the best combination of parameters for the model. Execution Settings:
 - verbose = 2
 - n_jobs = -1
+- cv = stratifiedKFold
+
+StratifiedKFold configurations: 
+
+- Number of splits (n_splits): 5 
+- Shuffling (shuffle): True 
+- Random State (random_state): 42
 
 ### RandomForestClassifier
 The RandomForestClassifier was one of the models used in this project. 
