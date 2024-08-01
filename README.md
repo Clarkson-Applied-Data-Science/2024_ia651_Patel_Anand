@@ -17,7 +17,7 @@
 
 This project utilizes several datasets involving financial and personal data points for individuals. These datasets include information such as ID, Customer_ID, Age, SSN, Occupation, Annual Income, Credit Score, and more. The data originates from a simulated financial dataset designed to resemble real-world scenarios in banking and credit scoring. The datasets are collected to explore patterns and model credit behavior, making them useful for credit risk assessment and financial product tailoring.
 
-## Dataset Link
+### Dataset Link
 [Link To Dataset](https://www.kaggle.com/datasets/budhadityadutta/credit-score-classification/data)
 
 ## Fields and Data Collection
@@ -94,7 +94,7 @@ Handled missing values and corrected inconsistencies in the data. This included:
 
 Created new features and transformed categorical variables into a numerical format suitable for machine learning models. This included:
 
-- **Label Encoding**: The `Payment_of_Min_Amount` column was label encoded to convert categorical data into numerical format.
+- **Label Encoding**: The `Payment_of_Min_Amount`, `Credit_Mix` columns were label encoded to convert categorical data into numerical format.
 - **One-Hot Encoding**: The `Type_of_Loan`, `Payment_Behaviour`, `Occupation` columns was one-hot encoded manually.
 - **Advanced Techniques**: Created a new feature `Debt_to_Income_Ratio` by dividing `Outstanding_Debt` by `Annual_Income`.
 
