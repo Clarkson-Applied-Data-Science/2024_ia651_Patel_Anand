@@ -10,7 +10,7 @@ This project utilizes several datasets involving financial and personal data poi
 - [Data Overview](#data-overview)
 - [Process Overview](#process-overview)
 - [Models Used and Validation Metrics(Initial Modeling)](#models-used-and-validation-metrics)
-- [Model Fitting](#model-fitting)
+- [Hyperparameter Tuning](#hyperparameter-tuning)
 - [Handling Overfitting/Underfitting](#handling-overfittingunderfitting)
 - [Production Advice](#production-advice)
 - [Future Work and Improvements](#future-work-and-improvements)
@@ -236,7 +236,7 @@ weighted avg       0.78      0.78      0.78      5140
 |-------------------------|--------------------------------------------------|------------|---------------------|
 | XGBoostClassifier       | {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 200} | 0.7657130508732858 | 0.775875486381323 |                                 
 
-### Hyperparameter Tuning
+## Hyperparameter Tuning
 
 The best accuracy was achieved in `RandomForestClassifier`. That is why going forward with optimizing the model parameters using `GridSearchCV` to find the best combination of parameters for the model.
 
