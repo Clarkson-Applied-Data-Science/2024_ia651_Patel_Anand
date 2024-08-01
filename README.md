@@ -243,8 +243,11 @@ The best accuracy was achieved in `RandomForestClassifier`. That is why going fo
 ### Handling Overfitting/Underfitting
 Strategies used to handle overfitting and underfitting included:
 
-- **Cross-validation**: Ensuring the model generalizes well to new data by using cross-validation.
+- **Stratified Cross-Validation**: To ensure that our model's evaluation was both rigorous and unbiased, we implemented StratifiedKFold for cross-validation. Here's how we configured StratifiedKFold: 
 
+- Number of splits (n_splits): 5 
+- Shuffling (shuffle): True 
+- Random State (random_state): 42 
 
 | Model                   | Best Parameters                                  | Best Score | Validation Accuracy | Cross-Validation Scores                   | Mean CV Accuracy |
 |-------------------------|--------------------------------------------------|------------|---------------------|-------------------------------------------|------------------|
