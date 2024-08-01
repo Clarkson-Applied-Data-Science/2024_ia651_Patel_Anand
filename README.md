@@ -157,11 +157,11 @@ Created new features and transformed categorical variables into a numerical form
 ![alt text](Corr-Matrix.png)
 
 ## Models Used and Validation Metrics
-Several machine learning models were employed in this project.
+Several machine learning models were employed in this project and the performance was evaluated using metrics such as accuracy, precision, recall, and F1 score.
 - RandomForest Classifier
 - DecisionTree Classifier
 - XGBoost Classifier
-Model performance was evaluated using metrics such as accuracy, precision, recall, and F1 score.
+
 
 **RandomForestClassifier**
 
