@@ -1,5 +1,18 @@
 # Credit Score Prediction Using Machine Learning
 
+## Table of Contents
+- [Dataset Description](#DatasetDescription)
+- [Fields and Data Collection](#FieldsandDataCollection)
+- [Data Overview](#DataOverview)
+- [Prediction Objective](#PredictionObjective)
+- [Process Overview](#ProcessOverview)
+- [Models Used](#Models Used)
+- [Model Fitting](#Model Fitting)
+- [Handling Overfitting/Underfitting](#HandlingOverfitting/Underfitting)
+- [Production Advice](#ProductionAdvice)
+- [Future Work and Improvements](#FutureWorkandImprovements)
+- [Conclusion](#Conclusion)
+
 ## Dataset Description
 
 This project utilizes several datasets involving financial and personal data points for individuals. These datasets include information such as ID, Customer_ID, Age, SSN, Occupation, Annual Income, Credit Score, and more. The data originates from a simulated financial dataset designed to resemble real-world scenarios in banking and credit scoring. The datasets are collected to explore patterns and model credit behavior, making them useful for credit risk assessment and financial product tailoring.
@@ -143,21 +156,11 @@ Created new features and transformed categorical variables into a numerical form
   **Correlation Matrix**
 ![alt text](Corr-Matrix.png)
 
-### Model Fitting
-
-The model fitting process involved training a `RandomForestClassifier` on the preprocessed training data. Key steps included:
-
-- **Train/Test Split**: The dataset was split into 80% training and 20% testing sets to ensure a balanced representation.
-- **Hyperparameter Tuning**: Optimizing the model parameters using `GridSearchCV` to find the best combination of parameters for the model.
-
-| Model                   | Best Parameters                                  | Best Score | Validation Accuracy | Cross-Validation Scores                   | Mean CV Accuracy |
-|-------------------------|--------------------------------------------------|------------|---------------------|-------------------------------------------|------------------|
-| RandomForestClassifier  | {'bootstrap': True, 'max_depth': 30, 'n_estimators': 200} | 0.7785072695728552 | 0.7920233463035019 | [0.79163424, 0.79081533, 0.79081533, 0.78575598, 0.78925861] | 0.7896559005938415 |
-| DecisionTreeClassifier  | {'criterion': 'entropy', 'max_depth': 10}       | 0.7256275040770372 | 0.7328793774319066 | N/A                                       | N/A              |
-| XGBoostClassifier       | {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 200} | 0.7657130508732858 | 0.775875486381323 | N/A                                       | N/A              |
-
-### Validation Metrics
-
+## Models Used and Validation Metrics
+Several machine learning models were employed in this project. 
+1.RandomForest Classifier
+2.DecisionTree Classifier
+3.XGBoost Classifier
 Model performance was evaluated using metrics such as accuracy, precision, recall, and F1 score.
 
 **RandomForestClassifier**
@@ -202,8 +205,6 @@ The DecisionTreeClassifier was one of the models used in this project. The perfo
    macro avg       0.70      0.70      0.70      5140
 weighted avg       0.73      0.73      0.73      5140
 ```
-## Models Used
-Several machine learning models were employed in this project. This section focuses on the XGBoostClassifier model.
 
 ### XGBoostClassifier
 The XGBoostClassifier was another model used in this project. The performance metrics for this model are as follows:
@@ -227,6 +228,19 @@ The XGBoostClassifier was another model used in this project. The performance me
 weighted avg       0.78      0.78      0.78      5140
 ```
 
+### Model Fitting
+
+The model fitting process involved training a `RandomForestClassifier` on the preprocessed training data. Key steps included:
+
+- **Train/Test Split**: The dataset was split into 80% training and 20% testing sets to ensure a balanced representation.
+- **Hyperparameter Tuning**: Optimizing the model parameters using `GridSearchCV` to find the best combination of parameters for the model.
+
+| Model                   | Best Parameters                                  | Best Score | Validation Accuracy | Cross-Validation Scores                   | Mean CV Accuracy |
+|-------------------------|--------------------------------------------------|------------|---------------------|-------------------------------------------|------------------|
+| RandomForestClassifier  | {'bootstrap': True, 'max_depth': 30, 'n_estimators': 200} | 0.7785072695728552 | 0.7920233463035019 | [0.79163424, 0.79081533, 0.79081533, 0.78575598, 0.78925861] | 0.7896559005938415 |
+| DecisionTreeClassifier  | {'criterion': 'entropy', 'max_depth': 10}       | 0.7256275040770372 | 0.7328793774319066 | N/A                                       | N/A              |
+| XGBoostClassifier       | {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 200} | 0.7657130508732858 | 0.775875486381323 | N/A                                       | N/A              |
+
 ## Handling Overfitting/Underfitting
 Strategies used to handle overfitting and underfitting included:
 
@@ -249,7 +263,7 @@ Suggestions for further enhancing the model include:
 - **Advanced Feature Engineering**: Applying more sophisticated feature engineering techniques.
 - **Model Training Techniques**: Experimenting with different models and ensemble methods to improve performance.
 
-## Conclusions
+## Conclusion
 This project successfully demonstrated the process of predicting credit scores using machine learning. The insights gained from EDA and the model's predictions can help financial institutions in assessing customer creditworthiness more effectively. Future improvements could include incorporating more data, additional features, and exploring advanced modeling techniques.
 
 
