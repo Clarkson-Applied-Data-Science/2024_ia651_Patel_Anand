@@ -161,6 +161,7 @@ Several machine learning models were employed in this project and the performanc
 - DecisionTree Classifier
 - XGBoost Classifier
 
+**Train/Test Split**: The dataset was split into 80% training and 20% testing sets to ensure a balanced representation.
 
 **RandomForestClassifier**
 
@@ -205,6 +206,10 @@ The DecisionTreeClassifier was one of the models used in this project. The perfo
 weighted avg       0.73      0.73      0.73      5140
 ```
 
+| Model                   | Best Parameters                                  | Best Score | Validation Accuracy                 
+|-------------------------|--------------------------------------------------|------------|---------------------|-------------------------------------------|------------------|
+| DecisionTreeClassifier  | {'criterion': 'entropy', 'max_depth': 10}       | 0.7256275040770372 | 0.7328793774319066                                    
+
 ### XGBoostClassifier
 The XGBoostClassifier was another model used in this project. The performance metrics for this model are as follows:
 
@@ -227,18 +232,17 @@ The XGBoostClassifier was another model used in this project. The performance me
 weighted avg       0.78      0.78      0.78      5140
 ```
 
-### Model Fitting
+| Model                   | Best Parameters                                  | Best Score | Validation Accuracy                 
+|-------------------------|--------------------------------------------------|------------|---------------------|-------------------------------------------|------------------|
+| XGBoostClassifier       | {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 200} | 0.7657130508732858 | 0.775875486381323                                   
 
-The model fitting process involved training a `RandomForestClassifier` on the preprocessed training data. Key steps included:
+### Hyperparameter Tuning
 
-- **Train/Test Split**: The dataset was split into 80% training and 20% testing sets to ensure a balanced representation.
-- **Hyperparameter Tuning**: Optimizing the model parameters using `GridSearchCV` to find the best combination of parameters for the model.
+The best accuracy was achieved in `RandomForestClassifier`. That is why going forward with optimizing the model parameters using `GridSearchCV` to find the best combination of parameters for the model.
 
 | Model                   | Best Parameters                                  | Best Score | Validation Accuracy | Cross-Validation Scores                   | Mean CV Accuracy |
 |-------------------------|--------------------------------------------------|------------|---------------------|-------------------------------------------|------------------|
 | RandomForestClassifier  | {'bootstrap': True, 'max_depth': 30, 'n_estimators': 200} | 0.7785072695728552 | 0.7920233463035019 | [0.79163424, 0.79081533, 0.79081533, 0.78575598, 0.78925861] | 0.7896559005938415 |
-| DecisionTreeClassifier  | {'criterion': 'entropy', 'max_depth': 10}       | 0.7256275040770372 | 0.7328793774319066 | N/A                                       | N/A              |
-| XGBoostClassifier       | {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 200} | 0.7657130508732858 | 0.775875486381323 | N/A                                       | N/A              |
 
 ## Handling Overfitting/Underfitting
 Strategies used to handle overfitting and underfitting included:
