@@ -86,7 +86,7 @@ Handled missing values and corrected inconsistencies in the data. This included:
 - **Removing Unnecessary Columns**: Like ID, Name, SSN were removed to overcome classification problems.
 - **Removing Impurities**: Impurities like underscore, special charecters and negative values were removed from some of the columns.
 - **Dropped Null Values**: Dropped all the null values from the dataset
-- **Corrected Columns**: Columns like `Age` were corrected by converting the values in single unit of month.
+- **Corrected Columns**: Columns like `Age` were corrected by converting the values in single unit like month.
 - **Removed Outliers**: Removed Outliers by detecting them using IQR method.
 
 ### Exploratory Data Analysis (EDA)
@@ -162,8 +162,19 @@ Several machine learning models were employed in this project and the performanc
 - XGBoost Classifier
 
 **Train/Test Split**: The dataset was split into 80% training and 20% testing sets to ensure a balanced representation.
+**Model Optimization**: `GridSearchCV` was used to find the best combination of parameters for the model. Execution Settings:
+- verbose = 2
+- n_jobs = -1
 
-**RandomForestClassifier**
+### RandomForestClassifier
+The RandomForestClassifier was one of the models used in this project. 
+
+**Param_grid**:
+- n_estimators: [100, 200, 300]
+- max_depth: [10, 20, 30]
+- bootstrap: [True]
+
+The performance metrics for this model are as follows:
 
 | Metric    | Score |
 |-----------|-------|
@@ -189,7 +200,13 @@ weighted avg       0.79      0.79      0.79      5140
 | RandomForestClassifier  | {'bootstrap': True, 'max_depth': 30, 'n_estimators': 200} | 0.7785072695728552 | 0.7920233463035019 |
 
 ### DecisionTreeClassifier
-The DecisionTreeClassifier was one of the models used in this project. The performance metrics for this model are as follows:
+The DecisionTreeClassifier was one of the models used in this project. 
+
+**Param_grid**:
+- max_depth: [None, 10, 20, 30]
+- criterion: ['gini', 'entropy']
+  
+The performance metrics for this model are as follows:
 
 | Metric     | Score |
 |------------|-------|
@@ -215,7 +232,14 @@ weighted avg       0.73      0.73      0.73      5140
 | DecisionTreeClassifier  | {'criterion': 'entropy', 'max_depth': 10}       | 0.7256275040770372 | 0.7328793774319066 |                                   
 
 ### XGBoostClassifier
-The XGBoostClassifier was another model used in this project. The performance metrics for this model are as follows:
+The XGBoostClassifier was another model used in this project. 
+
+**Param_grid**:
+- n_estimators: [100, 200, 300]
+- max_depth: [3, 5, 7]
+- learning_rate: [0.01, 0.1, 0.2]
+
+The performance metrics for this model are as follows:
 
 | Metric     | Score |
 |------------|-------|
@@ -242,7 +266,7 @@ weighted avg       0.78      0.78      0.78      5140
 
 ## Hyperparameter Tuning
 
-The best accuracy was achieved in `RandomForestClassifier`. That is why going forward with optimizing the model parameters using `GridSearchCV` to find the best combination of parameters for the model.
+The best accuracy was achieved in `RandomForestClassifier`, that is why going forward with it the following steps were done:
 
 ### Handling Overfitting/Underfitting
 Strategies used to handle overfitting and underfitting included:
