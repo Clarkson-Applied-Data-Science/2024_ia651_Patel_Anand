@@ -32,11 +32,11 @@ These fields were compiled to mirror typical data used by financial institutions
 | Dataset                      | Rows   | Columns | Description                                                 |
 |------------------------------|--------|---------|-------------------------------------------------------------|
 | `train.csv`                  | 100,000| 28      | Raw training data                                           |
-| `Train_Cleaned_Data.csv`     | 100,000| 27      | Cleaned and processed training data                         |
-| `Train_Preprocessed.csv`     | 100,000| 27      | Preprocessed training data with feature engineering and encoding |
-| `test.csv`                   | 25,000 | 53      | Raw test data                                               |
-| `Test_Preprocessed.csv`      | 25,000 | 53      | Preprocessed test data ready for predictions                |
-| `test_with_Predicted_Credit_Scores.csv` | 25,000 | 54 | Test data with the predicted credit scores included         |
+| `Train_Cleaned_Data.csv`     |  25,696| 36      | Cleaned and processed training data                         |
+| `Train_Preprocessed.csv`     |  25,696| 53      | Preprocessed training data with feature engineering and encoding |
+| `test.csv`                   |  50,000| 27      | Raw test data                                               |
+| `Test_Preprocessed.csv`      |  21,313| 51      | Preprocessed test data ready for predictions                |
+| `test_with_Predicted_Credit_Scores.csv` | 21,313| 52 | Test data with the predicted credit scores included         |
 
 ### Columns Description for `train.csv`
 
@@ -85,17 +85,18 @@ The project followed an iterative approach starting with exploratory data analys
 
 Handled missing values and corrected inconsistencies in the data. This included:
 
-- **Removing SSN**: The SSN column was removed to ensure data privacy.
-- **Handling Missing Values**: Missing values in the `Monthly_Inhand_Salary` column were imputed using the median value.
-- **Correcting Age**: Negative values in the `Age` column were corrected by replacing them with the median age.
+- **Removing Unnecessary Columns**: Like ID, Name, SSN were removed to overcome classification problems.
+- **Removing Impurities**: Impurities like underscore, special charecters and negative values were removed from some of the columns.
+- **Dropped Null Values**: Dropped all the null values from the dataset
+- **Corrected Columns**: Columns like `Age` were corrected by converting the values in single unit of month.
+- **Removed Outliers**: Removed Outliers by detecting them using IQR method.
 
 ### Feature Engineering
 
 Created new features and transformed categorical variables into a numerical format suitable for machine learning models. This included:
 
-- **Label Encoding**: The `Occupation` column was label encoded to convert categorical data into numerical format.
-- **One-Hot Encoding**: The `Month` column was one-hot encoded to capture the cyclical nature of months.
-- **Scaling**: Numerical features such as `Annual_Income` and `Outstanding_Debt` were scaled using StandardScaler.
+- **Label Encoding**: The `Payment_of_Min_Amount` column was label encoded to convert categorical data into numerical format.
+- **One-Hot Encoding**: The `Type_of_Loan`, `Payment_Behaviour`, `Occupation` columns was one-hot encoded manually.
 - **Advanced Techniques**: Created a new feature `Debt_to_Income_Ratio` by dividing `Outstanding_Debt` by `Annual_Income`.
 
 ### Exploratory Data Analysis (EDA)
@@ -141,7 +142,7 @@ Created new features and transformed categorical variables into a numerical form
 
 ![alt text](PvC.png)
 
-- **Count Plot of Payment Behaviour vs Credit Score**: Shows the distribution of Payment Bhaviour 
+- **Count Plot of Payment Behaviour**: Shows the distribution of Payment Bhaviour 
 
   **Pie Chart of Payment Behaviour**
 
