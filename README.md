@@ -135,7 +135,25 @@ Handled missing values and corrected inconsistencies in the data. This included:
 
   **Count Plot of Payment of Min Amount vs Credit Score**
 
-![alt text](PvC.png)
+![alt text](PMvC.png)
+
+- **Count Plot of Payment Behaviour vs Credit Score**: Demonstrates the impact of behaviour of payment on credit scores, which can be crucial for understanding financial behavior patterns within different segments of a financial institution.
+
+  **Count Plot of Payment of Min Amount vs Credit Score**
+
+![alt text](PBvC.png)
+
+- **Count Plot of Months**: Shows the distribution of months
+
+  **Pie Chart of Months**
+
+![alt text](Mpie.png)
+
+- **Count Plot of Occupations**: Shows the distribution of occupations
+
+  **Pie Chart of Months**
+
+![alt text](Opie.png)
 
 - **Count Plot of Payment Behaviour**: Shows the distribution of Payment Bhaviour 
 
@@ -147,11 +165,11 @@ Handled missing values and corrected inconsistencies in the data. This included:
 
   **Pie Chart of Payment of Minimun Amount**
 
-![alt text](PMApie.png)
+![alt text](PMpie.png)
 
   **Correlation Matrix**: The correlation matrix helped identify multicollinearity and significant predictors. For instance, `Outstanding_Debt`, `Monthly_Balance`, `Debt_to_Income_Ratio_Per_Month`, `History_Mix_Interaction` and `Accounts_Interaction` showed strong correlations with the target variable `Credit_Score`.
   
-![alt text](Corr-Matrix.png)
+![alt text](corr.png)
 
 ### Feature Engineering
 
