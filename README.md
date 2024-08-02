@@ -243,7 +243,9 @@ weighted avg       0.73      0.72      0.72      8400
 
 | Model                   | Best Parameters                                  | Best Score | Validation Accuracy |                
 |-------------------------|--------------------------------------------------|------------|---------------------|
-| DecisionTreeClassifier  | {'criterion': 'entropy', 'max_depth': 10}      | 0.707857142857143 | 0.7197619047619047 |                                   
+| DecisionTreeClassifier  | {'criterion': 'entropy', 'max_depth': 10}      | 0.707857142857143 | 0.7197619047619047 | 
+
+![alt text](Dtree.png)
 
 ### XGBoostClassifier
 The XGBoostClassifier was another model used in this project. 
