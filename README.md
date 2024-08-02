@@ -19,7 +19,7 @@ This project utilizes several datasets involving financial and personal data poi
 - [Data Overview](#data-overview)
   - [Dataset Link](#dataset-link)
   - [Fields and Data Collection](#fields-and-data-collection)
-  - [Columns Description for train.csv](#columns-description-for-train.csv)
+  - [Columns Description for train.csv](#columns-description-for-traincsv)
 - [Process Overview](#process-overview)
   - [Project Narrative](#project-narrative)
   - [Data Cleaning](#data-cleaning)
