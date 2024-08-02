@@ -30,7 +30,7 @@ This project utilizes several datasets involving financial and personal data poi
   - [DecisionTreeClassifier](#decisiontreeclassifier)
   - [XGBoostClassifier](#xgboostclassifier)
 - [Hyperparameter Tuning](#hyperparameter-tuning)
-  - [Handling Overfitting/Underfitting](#handling-overfitting/underfitting)
+  - [Handling Overfitting/Underfitting](#handling-overfittingunderfitting)
 - [Confusion Matrix](#confusion-matrix)
 - [Outputs](#outputs)
   - [Predictions](#predictions)
