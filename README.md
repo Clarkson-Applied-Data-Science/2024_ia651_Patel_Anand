@@ -142,15 +142,15 @@ Handled missing values and corrected inconsistencies in the data. This included:
 
 ![alt text](PBvC.png)
 
-- **Count Plot of Months**: Shows the distribution of months
+- **Count Plot of Month**: Shows the distribution of months
 
-  **Pie Chart of Months**
+  **Pie Chart of Month**
 
 ![alt text](Mpie.png)
 
-- **Count Plot of Occupations**: Shows the distribution of occupations
+- **Count Plot of Occupation**: Shows the distribution of occupations
 
-  **Pie Chart of Occupations**
+  **Pie Chart of Occupation**
 
 ![alt text](Opie.png)
 
