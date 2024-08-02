@@ -8,7 +8,7 @@
 
 **Guided By**:
 - Professor Michael Gilbert
-- G.A. Nisar Ahamad
+- G.A. Nisar Ahamad Killedar
 
 ## Introduction
 
