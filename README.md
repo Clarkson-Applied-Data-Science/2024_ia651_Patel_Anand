@@ -138,7 +138,7 @@ Handled missing values and corrected inconsistencies in the data. This included:
 
 - **Count Plot of Payment Behaviour vs Credit Score**: Demonstrates the impact of behaviour of payment on credit scores, which can be crucial for understanding financial behavior patterns within different segments of a financial institution.
 
-  **Count Plot of Payment of Min Amount vs Credit Score**
+  **Count Plot of Payment Behaviour vs Credit Score**
 
 ![alt text](PBvC.png)
 
