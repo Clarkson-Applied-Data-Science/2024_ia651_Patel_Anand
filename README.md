@@ -151,7 +151,7 @@ Handled missing values and corrected inconsistencies in the data. This included:
 
 - **Count Plot of Occupations**: Shows the distribution of occupations
 
-  **Pie Chart of Months**
+  **Pie Chart of Occupations**
 
 ![alt text](Opie.png)
 
