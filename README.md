@@ -1,5 +1,13 @@
 # Credit Score Prediction Using Machine Learning
 
+**Presented By**:
+- Shubham Patel
+- Param Anand
+
+**Guided By**:
+- Professor Michael Gilbert
+- G.A. Nisar Ahamad
+
 ## Introduction
 
 This project utilizes several datasets involving financial and personal data points for individuals. These datasets include information such as ID, Customer_ID, Age, SSN, Occupation, Annual Income, Credit Score, and more. The data originates from a simulated financial dataset designed to resemble real-world scenarios in banking and credit scoring. The datasets are collected to explore patterns and model credit behavior, making them useful for credit risk assessment and financial product tailoring.
