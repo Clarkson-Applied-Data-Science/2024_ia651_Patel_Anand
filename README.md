@@ -50,8 +50,8 @@ The primary aim is to predict the 'Credit Score' of individuals based on their f
 
 | Dataset                      | Rows   | Columns | Description                                                 |
 |------------------------------|--------|---------|-------------------------------------------------------------|
-| `train.csv`                  | 100,000| 28      | Raw training data                                           |
-| `test.csv`                   |  50,000| 27      | Raw test data                                               |
+| `train.csv`                  | 100,000| 28      | Raw training data with target variable column               |
+| `test.csv`                   |  50,000| 27      | Raw test data without target variable column                |
 
 ### Fields and Data Collection
 
@@ -185,6 +185,7 @@ Several machine learning models were employed in this project and the performanc
 - DecisionTree Classifier
 - XGBoost Classifier
 
+**Dataset Used**: Model was trained on `train.csv` after performing data cleaning and pre-processing.
 **Train/Test Split**: The dataset was split into 80% training and 20% testing sets to ensure a balanced representation.
 **Model Optimization**: `GridSearchCV` was used to find the best combination of parameters for the model. Execution Settings:
 - verbose = 2
@@ -320,6 +321,7 @@ Strategies used to handle overfitting and underfitting included:
 ![alt text](cm.png)
 
 ## Outputs
+The trained model was used to generate outputs on `test.csv` after performing data cleaning and pre-processing.
 
 ### Predictions:
 
