@@ -119,22 +119,6 @@ Handled missing values and corrected inconsistencies in the data. This included:
 - **Observations**: The dataset contains 100,000 observations.
 - **Feature Distribution**: Focus was on analyzing imbalanced features and understanding the distribution impact on model performance.
 
-  **Distribution of Annual Income**
-  
-![alt text](AI.png)
-
-  **Distribution of Monthly Inhand Salary**
-  
-![alt text](MIS.png)
-
-  **Distribution of Monthly Balance**
-  
-![alt text](MB.png)
-
-  **Distribution of Outstanding Debt**
-  
-![alt text](OD.png)
-
 - **Count Plot of Month vs Credit Score**: Shows the relationship between the month and the credit score, highlighting any seasonal trends in credit scores.
 
   **Count Plot of Month vs Credit Score**
@@ -211,23 +195,23 @@ The performance metrics for this model are as follows:
 | Precision | 0.79  |
 | Recall    | 0.79  |
 | F1 Score  | 0.79  |
-| Support   | 5140  |
+| Support   | 8400  |
 
 ```plaintext
               precision    recall  f1-score   support
 
-           0       0.78      0.79      0.79      1664
-           1       0.81      0.81      0.81      2737
-           2       0.74      0.72      0.73       739
+           0       0.78      0.81      0.79      2555
+           1       0.82      0.80      0.81      4517
+           2       0.74      0.73      0.74      1328
 
-    accuracy                           0.79      5140
-   macro avg       0.78      0.78      0.78      5140
-weighted avg       0.79      0.79      0.79      5140
+    accuracy                           0.79      8400
+   macro avg       0.78      0.78      0.78      8400
+weighted avg       0.79      0.79      0.79      8400
 ```
 
 | Model                   | Best Parameters                                  | Best Score | Validation Accuracy |
 |-------------------------|--------------------------------------------------|------------|---------------------|
-| RandomForestClassifier  | {'bootstrap': True, 'max_depth': 30, 'n_estimators': 200} | 0.7785072695728552 | 0.7920233463035019 |
+| RandomForestClassifier  | {'bootstrap': True, 'max_depth': 30, 'n_estimators': 300} | 0.7814583333333334 | 0.7932142857142858 |
 
 ### DecisionTreeClassifier
 The DecisionTreeClassifier was one of the models used in this project. 
@@ -241,25 +225,25 @@ The performance metrics for this model are as follows:
 | Metric     | Score |
 |------------|-------|
 | Precision  | 0.73  |
-| Recall     | 0.73  |
-| F1 Score   | 0.73  |
-| Support    | 5140  |
+| Recall     | 0.72  |
+| F1 Score   | 0.72  |
+| Support    | 8400  |
 
 ```plaintext
               precision    recall  f1-score   support
 
-           0       0.74      0.72      0.73      1664
-           1       0.76      0.77      0.77      2737
-           2       0.61      0.60      0.61       739
+           0       0.73      0.67      0.70      2555
+           1       0.77      0.75      0.76      4517
+           2       0.57      0.71      0.63      1328
 
-    accuracy                           0.73      5140
-   macro avg       0.70      0.70      0.70      5140
-weighted avg       0.73      0.73      0.73      5140
+    accuracy                           0.72      8400
+   macro avg       0.69      0.71      0.70      8400
+weighted avg       0.73      0.72      0.72      8400
 ```
 
 | Model                   | Best Parameters                                  | Best Score | Validation Accuracy |                
 |-------------------------|--------------------------------------------------|------------|---------------------|
-| DecisionTreeClassifier  | {'criterion': 'entropy', 'max_depth': 10}       | 0.7256275040770372 | 0.7328793774319066 |                                   
+| DecisionTreeClassifier  | {'criterion': 'entropy', 'max_depth': 10}      | 0.707857142857143 | 0.7197619047619047 |                                   
 
 ### XGBoostClassifier
 The XGBoostClassifier was another model used in this project. 
@@ -273,26 +257,26 @@ The performance metrics for this model are as follows:
 
 | Metric     | Score |
 |------------|-------|
-| Precision  | 0.78  |
-| Recall     | 0.78  |
-| F1 Score   | 0.78  |
-| Support    | 5140  |
+| Precision  | 0.77  |
+| Recall     | 0.77  |
+| F1 Score   | 0.77  |
+| Support    | 8400  |
 
 ```plaintext
               precision    recall  f1-score   support
 
-           0       0.77      0.78      0.77      1664
-           1       0.80      0.80      0.80      2737
-           2       0.72      0.68      0.70       739
+           0       0.76      0.77      0.77      2555
+           1       0.79      0.80      0.80      4517
+           2       0.71      0.68      0.70      1328
 
-    accuracy                           0.78      5140
-   macro avg       0.76      0.75      0.76      5140
-weighted avg       0.78      0.78      0.78      5140
+    accuracy                           0.77      8400
+   macro avg       0.76      0.75      0.75      8400
+weighted avg       0.77      0.77      0.77      8400
 ```
 
 | Model                   | Best Parameters                                  | Best Score | Validation Accuracy |                 
 |-------------------------|--------------------------------------------------|------------|---------------------|
-| XGBoostClassifier       | {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 200} | 0.7657130508732858 | 0.775875486381323 |                                 
+| XGBoostClassifier       | {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 300} | 0.7625297619047618 | 0.771547619047619 |                                 
 
 ## Hyperparameter Tuning
 
@@ -310,7 +294,7 @@ Strategies used to handle overfitting and underfitting included:
 
 | Model                   | Cross-Validation Scores                   | Mean CV Accuracy |
 |-------------------------|-------------------------------------------|------------------|
-| RandomForestClassifier  | [0.79163424, 0.79081533, 0.79081533, 0.78575598, 0.78925861] | 0.7896559005938415 |
+| RandomForestClassifier  | [0.78547619 0.79107143 0.79392857 0.78404762 0.7927381] | 0.7894523809523809 |
 
 ## Confusion Matrix
 
