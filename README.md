@@ -110,7 +110,6 @@ Handled missing values and corrected inconsistencies in the data. This included:
 - **Removing Impurities**: Impurities like underscore, special charecters and negative values were removed from some of the columns.
 - **Dropped Null Values**: Dropped all the null values from the dataset
 - **Corrected Columns**: Columns like `Age` were corrected by converting the values in single unit like month.
-- **Removed Outliers**: Removed Outliers by detecting them using IQR method.
 
 ### Exploratory Data Analysis (EDA)
 
