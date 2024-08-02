@@ -318,7 +318,7 @@ Strategies used to handle overfitting and underfitting included:
 
 ## Confusion Matrix
 
-![alt text](cm1.png)
+![alt text](cm.png)
 
 ## Outputs
 
