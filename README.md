@@ -186,9 +186,7 @@ Several machine learning models were employed in this project and the performanc
 - XGBoost Classifier
 
 **Dataset Used**: Model was trained on `train.csv` after performing data cleaning and pre-processing.
-
 **Train/Test Split**: The dataset was split into 80% training and 20% testing sets to ensure a balanced representation.
-
 **Model Optimization**: `GridSearchCV` was used to find the best combination of parameters for the model. Execution Settings:
 - verbose = 2
 - n_jobs = -1
