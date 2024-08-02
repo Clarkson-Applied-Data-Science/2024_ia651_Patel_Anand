@@ -23,7 +23,7 @@ This project utilizes several datasets involving financial and personal data poi
 - [Process Overview](#process-overview)
   - [Project Narrative](#project-narrative)
   - [Data Cleaning](#data-cleaning)
-  - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda))
+  - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
   - [Feature Engineering](#feature-engineering)
 - [Models Used and Validation Metrics (Initial Modeling)](#models-used-and-validation-metrics-initial-modeling)
   - [RandomForestClassifier](#randomforestclassifier)
