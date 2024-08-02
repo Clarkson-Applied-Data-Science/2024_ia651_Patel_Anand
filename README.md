@@ -1,5 +1,7 @@
 # Credit Score Prediction Using Machine Learning
 
+## Final Project
+
 **Presented By**:
 - Shubham Patel
 - Param Anand
